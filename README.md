@@ -1,4 +1,4 @@
-# BioML Challenge 2024: Protein Binder Design, De novo Design of Mini Protein Binders Targeting CD20
+# BioML Challenge 2024: De novo Design of Mini Protein Binders Targeting CD20
 
 This repository presents our work for the BioML Challenge 2024, where the task is to design an 80 amino acid antibody sequence that binds to human CD20, a critical target in immunotherapy.
 
