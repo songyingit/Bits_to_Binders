@@ -17,11 +17,10 @@ We first aimed at extracting subsequences from Rituximab, a previous resolved mo
    - Masked positions are chosen based on a specified percentage of non-fixed positions in the sequence. The results are summarized in a CSV file that includes the sequence similarity between the original and the predicted sequences.
    - AlphaFold2 Multimer (localcolabfold version) was further used to evaluate the binding of mutant sequences with human CD20. The top-performing mutants, based on the ipTM score from `rituximab_mutant_sequences_predict.csv`, was selected for futher Binder design loop optimizations.
 
-## Human CD20 Binder Optimization Loop (Credit to Diego E Kleiman)
-
+## Human CD20 Binder Optimization Loop 
 Then we developed the following binder design loop to optimize previously designed sequences. 
 
-1. **Binder Optimization (`run_design_loop.py`)**:
+**[Binder Optimization (Credit to Diego E Kleiman)](https://github.com/diegoeduardok/binder_design_loop)**:
    - This script automates an iterative design process involving protein structure prediction and sequence generation, using AlphaFold2 Multimer (localcolabfold version)  and ProteinMPNN in a loop. 
    - First, AlphaFold2 Multimer (localcolabfold version) was leveraged to predict the complex structure of previous selected sequence.
    - Then, ProteinMPNN was used to generate mutant protein sequences. It takes a protein structure, designs sequences for specific chains and positions, and outputs multiple new sequences. Then These sequences 
